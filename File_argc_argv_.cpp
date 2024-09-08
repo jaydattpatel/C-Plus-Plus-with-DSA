@@ -16,11 +16,11 @@ PS F:\C++ Programs> .\a
 There are 1 arguments:
 argv[0] : F:\C++ Programs\a.exe
 
-PS F:\C++ Programs> .\a student.doc PRN.txt
+PS F:\C++ Programs> .\a student.doc File_Print.txt
 There are 3 arguments:
 argv[0] : F:\C++ Programs\a.exe
 argv[1] : student.doc
-argv[2] : PRN.txt
+argv[2] : File_Print.txt
 */
 #include <iostream> 
 #include <fstream>
@@ -28,7 +28,7 @@ using namespace std;
 
 int main(int argc, char *argv[]) 
 { 
-    ofstream file_out("PRN.txt");
+    ofstream file_out("File_Print.txt");
     file_out<<"This is a test print page";
 
     cout << "There are " << argc << " arguments:" << endl; 
